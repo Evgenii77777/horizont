@@ -1,0 +1,30 @@
+.item {
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.item:hover,
+.item:focus {
+  box-shadow: rgb(30, 80, 133) 0px 20px 30px -10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.photo {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.rating {
+  font-weight: 900;
+  color: #1e5085;
+}
+
+.rating::before {
+  content: "★";
+  margin-right: 4px;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input {
+  width: 100%;
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+.item:first-child {
+  font-weight: 700;
+  color: #1e5085;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1198.99px) {
+  .container {
+    flex-direction: column;
+  }
+}

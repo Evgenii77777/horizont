@@ -1,0 +1,38 @@
+.header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1e5085;
+}
+
+.header > a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.25;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.logo {
+  max-height: 100px;
+}
+
+@media (max-width: 766.99px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

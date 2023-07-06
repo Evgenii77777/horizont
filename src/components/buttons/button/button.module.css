@@ -1,0 +1,23 @@
+.base {
+  min-width: 150px;
+  padding: 10px 20px;
+  border: 2px solid #1e5085;
+  border-radius: 20px;
+}
+
+.base:hover,
+.base:focus {
+  color: aliceblue;
+  background-color: #1e5085;
+}
+
+.com {
+  width: 250px;
+  margin-left: 20px;
+}
+
+@media (max-width: 729.99px) {
+  .com {
+    margin: 20px auto;
+  }
+}

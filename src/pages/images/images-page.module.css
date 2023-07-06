@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrap {
+  margin-bottom: 20px;
+}
+
+.box {
+  margin-left: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.29;
+  color: #363636;
+}
+
+.rating {
+  font-weight: 900;
+  color: #1e5085;
+}
+
+.rating::after {
+  content: "★";
+  margin-left: 6px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1198.99px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .box {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
